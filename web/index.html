@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Macro Signal</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <div class="eyebrow">MARKET RESEARCH DASHBOARD</div>
+      <h1>Cross-Asset Macro Signal</h1>
+    </div>
+    <div class="status"><span></span> Data loaded</div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div>
+        <div class="eyebrow">LATEST MARKET SNAPSHOT</div>
+        <h2 id="mood">Loading markets...</h2>
+        <p>Next-month volatility forecast across four major assets.</p>
+      </div>
+      <div class="snapshot">
+        <div><span>VIX</span><strong id="vix">--</strong></div>
+        <div><span>Yield Curve</span><strong id="curve">--</strong></div>
+        <div><span>SPY</span><strong id="spy">--</strong></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Risk forecast</h2>
+        <p id="forecastDate">Latest available forecast</p>
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <div class="section-title"><h2>Recent volatility</h2></div>
+        <canvas id="chart" width="760" height="320"></canvas>
+      </article>
+      <article class="panel">
+        <div class="section-title"><h2>Model accuracy</h2></div>
+        <div id="scores" class="scores"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">
+        <h2>Direction prediction (Reality Check)</h2>
+        <p>Direction is harder to predict than volatility</p>
+      </div>
+      <div id="direction" class="direction"></div>
+    </section>
+  </main>
+
+  <footer>
+    Educational project only. Past results do not guarantee future returns. Not investment advice.
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
