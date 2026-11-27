@@ -166,3 +166,4 @@ MIT. See `LICENSE`. Replace "The project authors" in that file with your team's 
 conda activate base
 hash -r
 /opt/anaconda3/bin/python3.14 run.py# Cross-Asset-MacroSignal-Model
+# Cross-Asset-MacroSignal-Model
